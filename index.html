@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>কুরআনের আয়াত</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style4copyA1.css" id="theme-stylesheet">
+  <style>
+    /* Header এবং Dropdown মেনু স্টাইল */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #003366;
+      color: #fff;
+    }
+
+    .theme-selector {
+      position: relative;
+    }
+
+    .dropdown-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .dropdown-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 150px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .theme-selector:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>কুরআনের আয়াত</h1>
+    <div class="theme-selector">
+      <button class="dropdown-btn">থিম পরিবর্তন</button>
+      <div class="dropdown-content">
+        <a href="#" onclick="changeTheme('style4copyA1.css')">থিম অন</a>
+        <a href="#" onclick="changeTheme('style4copyA2.css')">থিম টু</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Button Container -->
+    <div class="button-container">
+      <button onclick="showVerse('sabr', this)">সবর</button>
+      <button onclick="showVerse('shukr', this)">শুকর</button>
+     <button onclick="showVerse('ilm', this)">জ্ঞান</button>
+<button onclick="showVerse('tawhid', this)">তাওহীদ</button>
+<button onclick="showVerse('duaa', this)">দোয়া</button>
+<button onclick="showVerse('danSadka', this)">দান সদকা</button>
+<button onclick="showVerse('iman', this)">ঈমান</button>
+<button onclick="showVerse('amal', this)">আমল</button>
+<button onclick="showVerse('salah', this)">নামাজ</button>
+<button onclick="showVerse('sawm', this)">রোজা</button>
+<button onclick="showVerse('hajj', this)">হজ</button>
+<button onclick="showVerse('akhlaq', this)">আখলাক</button>
+<button onclick="showVerse('sadaqah', this)">সদকা</button>
+<button onclick="showVerse('taqwa', this)">তাকওয়া</button>
+<button onclick="showVerse('hikmah', this)">হিকমাহ</button>
+<button onclick="showVerse('rahmah', this)">রহমত</button>
+<button onclick="showVerse('maghfirah', this)">মাগফিরাত</button>
+<button onclick="showVerse('tawbah', this)">তাওবা</button>
+<button onclick="showVerse('jannah', this)">জান্নাত</button>
+<button onclick="showVerse('jahannam', this)">জাহান্নাম</button>
+<button onclick="showVerse('zakat', this)">যাকাত</button>
+<button onclick="showVerse('sabrJihad', this)">সব্র ও জিহাদ</button>
+<button onclick="showVerse('quran', this)">কুরআন</button>
+<button onclick="showVerse('adl', this)">ন্যায়বিচার</button>
+<button onclick="showVerse('halalHaram', this)">হালাল ও হারাম</button>
+<button onclick="showVerse('rizq', this)">রিজিক</button>
+<button onclick="showVerse('akhira', this)">আখিরাত</button>
+<button onclick="showVerse('tawakkul', this)">তাওয়াক্কুল</button>
+<button onclick="showVerse('shirk', this)">শিরক</button>
+<button onclick="showVerse('birr', this)">পিতামাতার অধিকার</button>
+<button onclick="showVerse('husnulKhuluq', this)">সুন্দর চরিত্র</button>
+<button onclick="showVerse('ummah', this)">উম্মাহ</button>
+<button onclick="showVerse('siratMustaqim', this)">সিরাতুল মুস্তাকিম</button>
+
+    </div>
+    <!-- Verse Display -->
+    <div class="verse-container" id="verseDisplay">
+      <p>আয়াত এখানে প্রদর্শিত হবে।</p>
+    </div>
+  </div>
+  <div class="footer">
+    © ২০২৪ <span>কুরআনের আয়াত সংকলন</span> | ডিজাইন করেছেন: Mamun
+  </div>
+  <!-- External Script -->
+  <script src="script.js"></script>
+</body>
+</html>
