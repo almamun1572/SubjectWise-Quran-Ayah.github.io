@@ -218,3 +218,192 @@
     .footer span {
       color: #ff6f00;
     }
+
+
+/* Responsive Design */
+@media (min-width: 553px) {
+ /* General Styling for Mobile */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle, #16222a, #3a6073);
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  animation: fadeIn 1s ease-in-out;
+  touch-action: manipulation; /* Smooth touch experience */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header Styling */
+h1 {
+  font-size: 1.8rem; /* Optimized for smaller screens */
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(90deg, #ff6f00, #ffcc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  margin: 0;
+}
+
+/* Container Styling for Mobile */
+.container {
+  display: flex;
+  flex-direction: column; /* Stacked layout for mobile */
+  padding: 10px;
+  gap: 15px;
+}
+
+/* Button Container Styling */
+.button-container {
+  width: 100%;
+  max-height: 60vh; /* Optimized height for scrolling */
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px); /* Subtle background blur */
+  touch-action: manipulation;
+}
+
+/* Custom Scrollbar for Mobile */
+.button-container::-webkit-scrollbar {
+  width: 6px; /* Smaller scrollbar for mobile */
+}
+
+.button-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ff6f00, #ffcc00);
+  border-radius: 10px;
+}
+
+.button-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Button Styling */
+button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.97); /* Smooth tap feedback */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(to right, #4caf50, #8bc34a);
+}
+
+/* Verse Container Styling */
+.verse-container {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  overflow-y: auto;
+  color: #fefefe;
+}
+
+/* Custom Scrollbar for Verse Container */
+.verse-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.verse-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00b09b, #96c93d);
+  border-radius: 10px;
+}
+
+/* Arabic Text Styling */
+.verse-arabic {
+  font-family: 'Amiri', serif;
+  font-size: 1.8rem; /* Adjusted for mobile */
+  direction: rtl;
+  margin: 15px 0;
+  color: #ffeb3b;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Translation Styling */
+.verse-translation {
+  font-size: 1.2rem;
+  color: #b0e57c;
+  margin-top: 10px;
+}
+
+/* Info Block Styling */
+.info-block {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  color: #ffcc00;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 0.8rem; /* Smaller for mobile */
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: auto;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .verse-container {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .info-block {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .footer {
+    font-size: 0.7rem;
+    padding: 8px;
+  }
+}
+
+}
